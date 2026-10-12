@@ -54,7 +54,8 @@ def main():
             data = datetime.now().date()
             try:
                 prestito = deposito.nuovo_prestito(data, id_strumento, cognome_allievo)
-                print(f"Prestito andato a buon fine: {prestito}")
+                if prestito:
+                    print(f"Prestito andato a buon fine: {prestito}")
             except Exception as e:
                 print(e)
 
