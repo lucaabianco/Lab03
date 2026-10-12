@@ -36,6 +36,7 @@ class DepositoStrumenti:
         """Ordina gli strumenti per marca in ordine alfabetico"""
         return sorted(self.lista_strumenti, key = lambda x : x.marca)
 
+
     def nuovo_prestito(self, data, id_strumento, cognome_allievo):
         """Crea un nuovo prestito"""
         ok = False
